@@ -1,0 +1,32 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) annotate 
+// Source File Name:   SyncMethod.java
+
+package tomax.loo.lesson.redis.utils;
+
+
+public class SyncMethod
+{
+
+    public SyncMethod()
+    {
+    //    0    0:aload_0         
+    //    1    1:invokespecial   #1   <Method void Object()>
+    //    2    4:return          
+    }
+
+    public synchronized void syncTask()
+    {
+        i++;
+    //    0    0:aload_0         
+    //    1    1:dup             
+    //    2    2:getfield        #2   <Field int i>
+    //    3    5:iconst_1        
+    //    4    6:iadd            
+    //    5    7:putfield        #2   <Field int i>
+    //    6   10:return          
+    }
+
+    public int i;
+}
